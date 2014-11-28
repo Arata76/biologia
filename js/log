@@ -1,0 +1,12 @@
+--2014-11-22 22:01:04--  http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+Resolviendo ajax.googleapis.com (ajax.googleapis.com)... 2607:f8b0:4002:c09::5f, 74.125.196.95
+Conectando con ajax.googleapis.com (ajax.googleapis.com)[2607:f8b0:4002:c09::5f]:80... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: no especificado [text/javascript]
+Grabando a: “jquery.min.js”
+
+     0K .......... .......... .......... .......... ..........  123K
+    50K .......... .......... .......... .......... .           208K=0,6s
+
+2014-11-22 22:01:05 (151 KB/s) - “jquery.min.js” guardado [93868]
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="icon" href="#">
+    <title>Proyecto Secuencias</title>
+
+      <style>
+          .file-input-wrapper { overflow: hidden; position: relative; cursor: pointer; z-index: 1; }
+          .file-input-wrapper input[type=file],
+          .file-input-wrapper input[type=file]:focus,
+          .file-input-wrapper input[type=file]:hover { position: absolute; top: 0; left: 0; cursor: pointer; opacity: 0; filter: alpha(opacity=0); z-index: 99; outline: 0; }
+  .file-input-name { margin-left: 8px; }
+  </style>
+      
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">    
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+
+    <div  class="container theme-showcase" role="main">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">            
+            <li role="presentation"><a href="#">Inicio</a></li>
+            <li role="presentation" class="active"><a href="#">Proyectos</a></li>
+            <li role="presentation"><a href="#">Acerca de mi</a></li>
+            <li role="presentation"><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Alineador de  Secuencias</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Pasos a seguir </h1>          
+          <p class="lead">PASOS 1.</p>                
+          <p class="lead">PASOS 2.</p>
+          <p class="lead">PASOS 3.</p>
+          <p class="lead">PASOS 4.</p>
+
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+      </div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+      <h3>Entradas</h3>
+      
+<div class="col-xs-4">        
+    <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Parametros</h3>
+            </div>
+            <div class="panel-body">
+
+            <form role="form" action="javascript:fn_enviar();" id="frm_enviar" name="frm_enviar">
+                 <div class="form-group">
+                    <label >Distancia</label>
+                    <input type="text" class="form-control" id="distancia"  name="distancia" placeholder="(%)">
+                </div>             
+                <div class="form-group">
+                    <label >Nro pares</label>
+                    <input type="text" class="form-control" id="nPares" name="nPares" placeholder="(int)">
+                </div>             
+                <div class="form-group">
+                    <label >Conservacion</label>
+                    <input type="text" class="form-control" id="conservacion" name="conservacion" placeholder="(%)">
+                </div>             
+                <div class="form-group">
+                    <label></label>
+                    <button type="submit" class="btn btn-success" >Enviar</button>        
+                </div>            
+             </form>
+
+
+
+            </div>
+     </div>  
+</div>       
+
+        
+        
+<div class="col-xs-8">
+    
+<div class="panel panel-success">
+    <div class="panel-heading">
+              <h3 class="panel-title">Secuencias</h3>
+    </div>
+<div class="panel-body">
+
+<!-- <form role="form" action="javascript:fn_enviar();" id="frm_enviar" name="frm_enviar"> -->
+    
+        <!--secuencia 1-->
+    <div class="form-group">        
+        <div class="col-xs-12">
+            
+        <div class="form-group">        
+        <div class="col-xs-10">
+        <label >Drosophila Melanogaster</label>        
+        <input type="text" class="form-control" id="lblSeq1" name="lblSeq1" placeholder="AAATACTAAACGCATTGCAGCTGTGGCAATGCCCAAGTCTTGGTCTTACGGTCACACTGGCAAAGTTTAAAAAT">
+        </div>            
+        <div class="col-xs-2">    
+        <a class="file-input-wrapper btn btn-default  btn-primary">
+            <input title="Search for a file to add" class="btn-primary" type="file" data-filename-placement="inside">               
+        </a>
+        </div>    
+        </div>
+            
+        </div>  
+    </div>            
+        
+        
+    <!--secuencia 2-->
+    <div class="form-group">        
+        <div class="col-xs-12">
+            
+        <div class="form-group">        
+            <div class="col-xs-10">
+        <label >Drosophila Pseudoscura</label>
+        <input type="text" class="form-control" id="lblSeq2" name="lblSeq2" placeholder="TTTCGGTAGTCAAATGTTTTTTTTTTATTCTTTTTACGAAATTTTACACACAAAAGGCTGCTTCTGT">
+        </div>            
+        <div class="col-xs-2">    
+        <a class="file-input-wrapper btn btn-default  btn-primary">
+            <input title="Search for a file to add" class="btn-primary" type="file" data-filename-placement="inside">               
+        </a>
+        </div>    
+        </div>              
+            
+    </div>    
+    </div>              
+        
+    <!--secuencia 3-->
+    <div class="form-group">        
+        <div class="col-xs-12">
+            
+        <div class="form-group">        
+            <div class="col-xs-10">
+        <label >Drosophila Virilis</label>
+        <input type="text" class="form-control" id="lblSeq3" name="lblSeq3" placeholder="ACACATGTGATTGCTTAAGTGCGAAAAACTAGTTCAAGCTTTGCGTCCTTCAACGTCTTGGCC">
+
+        </div>            
+        <div class="col-xs-2">    
+        <a class="file-input-wrapper btn btn-default  btn-primary">
+            <input title="Search for a file to add" class="btn-danger" type="file" data-filename-placement="inside">            
+        </a>        
+        </div>             
+        </div>              
+            
+    </div>    
+    </div>                 
+
+    
+    <!--         <button type="submit" class="btn btn-success" >Enviar</button>      
+    
+        
+</form> -->
+</div>              
+</div>              
+</div>              
+      
+  </div><!-- fin entradas-->
+</div>  
+        
+<div class="panel panel-default">
+  <div class="panel-body">      
+      <div class="col-xs-4">          
+        <div class="form-group">
+          <label><h3>Patron</h3></label>
+          <input type="text" class="form-control" id="inPatron" name="inPatron">          
+        </div>
+      </div>
+      <div class="form-group">      
+        <div id="div_resultado_listar">
+            <!-- Tabla-->
+        </div>
+      </div>
+    <!--<div class="col-xs-3">    
+    <div class="input-group">
+        <input type="text" class="form-control">    
+      
+    </div>
+    </div>
+      <div class="col-xs-3">
+        <button type="button" class="btn btn-success glyphicon glyphicon-search"> Buscar</button>        
+      
+  </div>-->
+  </div>
+
+</div>       
+        
+<div class="panel panel-default">
+  <div class="panel-body">
+      <h3> Resultado</h3>
+      <div id="div_resultado">
+
+      </div>
+    </div>
+</div>       
+  
+        
+        
+        
+        
+        
+
+      <footer class="footer">
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- JAVASCRIPT -->
+      <script src="js/bootstrap.file-input.js"> </script>
+      <script src="js/jquery.min.js"> </script>
+      <script src="js/jquery.dataTables.min.js"></script>      
+      <script src="js/dataTables.bootstrap.js"></script>      
+      <script src="js/control.js"></script>      
+      <!--<script>$(document).ready(function(){$('input[type=file]').bootstrapFileInput();});
+      </script>-->
+      
+  </body>
+</html>
+        
